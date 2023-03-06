@@ -1,0 +1,24 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kindziolek/Todo-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kindziolek/Todo-list/issues"
+  },
+  "homepage": "https://github.com/Kindziolek/Todo-list#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
