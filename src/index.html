@@ -6,24 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="js.js"></script>
 
     <title>TODO LIST</title>
 </head>
 
 <body>
-
-    <script src="./Button.js"></script>
-    <script src="./Input.js"></script>
-    <script src="./Task.js"></script>
-    <script src="./ToDo.js"></script>
-
-    <script>
-        const button1 = new Button("Add", () => allert('Click'))
-
-        document.body.appendChild(button1.render())
-    </script>
-
+    <div class="container">
+        <div class="todo">
+            <h2>TODO LIST</h2>
+            <div class="box"></div>
+            <form class="form">
+                <input id="todo">
+                <button>Add</button>
+            </form>
+        </div>
+    </div>
 </body>
+    <script src="./js.js"></script>
 
 </html>
