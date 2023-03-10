@@ -15,9 +15,11 @@ renderList();
 const addItem = document.querySelector(".add_btn");
 
 
+
 addItem.addEventListener("click", () => {
   const todo = document.querySelector('input').value;
   list.push(`${todo}`);
 
   renderList();
+  event.preventDefault();
 });
