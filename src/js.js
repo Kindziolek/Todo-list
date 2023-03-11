@@ -16,7 +16,7 @@ function renderList() {
       let remove = document.querySelector(".remove")
      
       remove.addEventListener("click", () => {
-        alert("ss")
+        remove()
         // remove.parentElement.removeChild(remove)
         
         renderList();
