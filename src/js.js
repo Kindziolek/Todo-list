@@ -11,15 +11,15 @@ function renderList() {
     div.classList.add("item");
     div.innerHTML = `${el} <span class="remove"></span>`;
 
+    let removeItem = div.querySelector(".remove");
+    
+    removeItem.addEventListener("click", (event) => {
+     list = list.filter(k => k !== el);
+      
 
-    let removeItem = document.querySelector(".remove");
-    let item = document.querySelector(".item")
-removeItem.addEventListener("click", () => {
-  //  removeItem.parentElement.removeChild(removeItem)
-
-  renderList();
-  event.preventDefault();
-});
+      renderList();
+      event.preventDefault();
+    });
   });
 }
 
@@ -33,5 +33,3 @@ button.addEventListener("click", () => {
   renderList();
   event.preventDefault();
 });
-
-
