@@ -1,4 +1,4 @@
-const list = [];
+const list = ["ss", "sssss"];
 
 function renderList() {
   document.querySelector(".list").innerHTML = "";
@@ -9,21 +9,17 @@ function renderList() {
 
     document.querySelector(".list").append(div);
     div.classList.add("item");
-    div.innerHTML = (`${el} <span class="remove"></span>`);
+    div.innerHTML = `${el} <span class="remove"></span>`;
 
-  
-  
-      let remove = document.querySelector(".remove")
-     
-      remove.addEventListener("click", () => {
-        remove()
-        // remove.parentElement.removeChild(remove)
-        
-        renderList();
-        event.preventDefault();
-      });
-    
 
+    let removeItem = document.querySelector(".remove");
+    let item = document.querySelector(".item")
+removeItem.addEventListener("click", () => {
+  //  removeItem.parentElement.removeChild(removeItem)
+
+  renderList();
+  event.preventDefault();
+});
   });
 }
 
@@ -34,7 +30,8 @@ const button = document.querySelector(".add_btn");
 button.addEventListener("click", () => {
   const todo = document.querySelector("input").value;
   list.push(`${todo}`);
-
   renderList();
   event.preventDefault();
 });
+
+
