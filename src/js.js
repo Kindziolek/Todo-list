@@ -1,25 +1,25 @@
-const items = ["ss", "sss", "kkk"];
+let todoItems = [];
 
-let list = document.querySelector("#list");
-let addBtn = document.querySelector("#btn");
+function addTodo(text) {
+  const todo = {
+    text,
+    checked: false,
+    id: Date.now(),
+  };
 
-let removeBtn = document.querySelector(".remove");
-
-function renderList() {
-  document.querySelector("#list").innerHTML = "";
-
-  items.forEach((el) => {
-    list.innerHTML += `<li class="item"> ${el} <span class="remove"></span> </li>`;
-  });
+  todoItems.push(todo);
+  console.log(todoItems)
+  
 }
 
-renderList();
-
-addBtn.addEventListener("click", () => {
-  const newItem = document.querySelector("input").value;
-  items.push(newItem);
-  renderList();
-  e.preventDefault();
-});
-
-
+let form = document.querySelector("#form")
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  let input = document.querySelector("#text");
+  let text = input.value.trim();
+  if (text !== '') {
+    addTodo(text);
+    input.value = '';
+    input.focus();
+  }
+})

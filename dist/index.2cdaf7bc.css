@@ -1,0 +1,35 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  display: flex;
+}
+
+.item {
+  justify-content: space-between;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.item_done {
+  text-decoration: line-through;
+}
+
+.remove {
+  width: 50px;
+  height: 50px;
+  background-image: url("icons8-remove-50.0a00e966.png");
+  display: block;
+}
+
+.list {
+  height: 500px;
+}
+
+.todo {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
