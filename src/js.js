@@ -24,7 +24,7 @@ form.addEventListener("submit", (event) => {
 
 function renderTodo(todo) {
   const list = document.querySelector("#list");
-  const isCheked = todo.checked ? "done" : "";
+  const isChecked = todo.checked ? "done" : "";
   const node = document.createElement("li");
 
   node.setAttribute('class', `todo-item ${isChecked}`);
