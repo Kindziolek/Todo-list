@@ -1,15 +1,42 @@
 .container {
+    width: 100%;
+    max-width: 500px;
     margin: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.item {
-    margin-bottom: 15px;
+.todo {
+    
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
+
+.list {
+    width: 250px;
+}
+.title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form {
+    margin-top: 20px;
+}
+.item_text {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+ 
+  }
 
 .item_done {
     text-decoration: line-through;
@@ -17,19 +44,9 @@
 
 
 .remove {
-display: block;
-    background-image: url("./Image/icons8-remove-50.png");
-    width: 50px;
-    height: 50px;
+background-color: transparent;
+border: none;
 }
 
 
-.list {
-    height: 500px;
-}
-.todo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
+
