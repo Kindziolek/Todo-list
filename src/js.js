@@ -16,8 +16,11 @@ function renderTodo(todo) {
   <img src="./image/icon_remove.png" width="20px" height="20px">
   </button>`;
 
-  list.append(node);
-  
+  if (item) {
+    list.replaceChild(node, item);
+  } else {
+    list.append(node);
+  }
 }
 
 function addTodo(text) {
@@ -32,6 +35,12 @@ function addTodo(text) {
 
 }
 
+function toggleDone(key) {
+  const index = todoItems.findIndex(item => item.id === Number.key())
+  todoItems[index].checked = !todoItems[index].checked;
+  renderTodo(todoItems[index]);
+}
+
 const form = document.querySelector("#form");
 form.addEventListener("click", (event) => {
   event.preventDefault();
@@ -42,6 +51,15 @@ form.addEventListener("click", (event) => {
     addTodo(text);
     input.value = '';
     input.focus();
+  }
+});
+
+const list = document.querySelector("#list")
+
+list.addEventListener("click", event => {
+  if (event.target.classlist.containds('js-tick')) {
+    const itemKey = event.target.parentElement.dataset.key;
+    toggleDone(itemKey)
   }
 });
 
