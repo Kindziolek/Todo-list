@@ -1,52 +1,46 @@
 .container {
-    width: 100%;
-    max-width: 500px;
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .list {
-    width: 250px;
+  width: 250px;
 }
 .title {
-    font-size: 30px;
-    margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 .todo-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .item_text {
-    flex-grow: 1;
-    margin-left: 10px;
-    margin-right: 10px;
- 
-  }
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .item_done {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
-
 
 .remove {
-background-color: transparent;
-border: none;
+  background-color: transparent;
+  border: none;
 }
-
-
-
